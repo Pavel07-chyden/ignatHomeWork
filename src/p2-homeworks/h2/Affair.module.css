@@ -1,0 +1,29 @@
+
+.priorityStyle {
+    display: inline-block;
+    margin-left: 10px;
+
+}
+.wrapperSpan{
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #61dafb;
+    padding: 15px;
+    position: relative;
+    text-align: left;
+}
+.wrapperSpan:nth-child(2n){
+    background-color: #fff;
+}
+.delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 25px;
+    border: 0;
+    cursor: pointer;
+    border-left: 1px solid #61dafb;
+}
+.name {
+    text-transform: capitalize;
+}
