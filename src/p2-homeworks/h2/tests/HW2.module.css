@@ -1,23 +1,4 @@
-.blue {
-    border-bottom: 5px solid blue;
-}
-
-.TexInput {
-    color: #fff;
-    font-size: 20px;
-    border-radius: 50px;
-    padding: 0 5px 0 20px;
-
-}
-.column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 15px;
-    margin-bottom: 20px;
-}
-
-.homeWorkBlock4 {
+.homeWorkBlock2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,4 +17,9 @@
     font-size: 30px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+
 }
+/*.blockMargin {*/
+/*    margin-top: 15px;*/
+/*    margin-bottom: 20px;*/
+/*}*/

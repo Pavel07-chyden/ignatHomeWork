@@ -1,0 +1,37 @@
+.dark {
+    background: dimgrey;
+}
+
+.dark-text {
+    color: aliceblue;
+}
+
+.red {
+    background: lightcoral;
+}
+
+.red-text {
+    color: aqua;
+}
+
+.some {
+    background: lightgreen;
+}
+
+.some-text {
+    color: darkslateblue;
+}
+
+.blockTitle {
+    width: 500px;
+    background-color: #e2dede;
+    margin: 0;
+    height: 100px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

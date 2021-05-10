@@ -20,7 +20,7 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
         onKeyPress, onEnter,
         error,
         className, spanClassName,
-
+        placeholder,
         ...restProps// все остальные пропсы попадут в объект restProps
     }
 ) => {
@@ -30,6 +30,7 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
 
         onChangeText && onChangeText(e.currentTarget.value);
     }
+
     const onKeyPressCallback = (e: KeyboardEvent<HTMLInputElement>) => {
         onKeyPress && onKeyPress(e);
 

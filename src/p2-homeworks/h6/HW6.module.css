@@ -1,0 +1,30 @@
+.blockTitle {
+    width: 500px;
+    background-color: #e2dede;
+    margin: 0;
+    height: 100px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.buttonWrapper button:hover {
+    background-color: #c0fb61;
+}
+
+.buttonWrapper button {
+    width: 15%;
+    height: 15%;
+    border: none;
+    /*border-right: 2px solid #61dafb;*/
+    /*outline: none;*/
+    cursor: pointer;
+    /*transition: all .3s linear;*/
+}
+
+

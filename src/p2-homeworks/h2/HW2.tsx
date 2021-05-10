@@ -1,8 +1,10 @@
 import React, {useState} from "react";
 import Affairs from "./Affairs";
+import s from "../h2/tests/HW2.module.css";
 
 // types
-export type AffairPriorityType = "high" | "low" | "middle"; // need to fix any
+export type AffairPriorityType =
+    "high" | "low" | "middle"; // need to fix any
 export type AffairType = {
     _id: number
     name: string
@@ -38,10 +40,8 @@ function HW2() {
 
 
     return (
-        <div>
-            <hr/>
-            homeworks 2
-
+        <div className={s.homeWorkBlock2}>
+            <h2 className={s.clockTitle}>homeworks 2</h2>
             {/*should work (должно работать)*/}
             <Affairs
                 data={filteredAffairs}
@@ -49,11 +49,9 @@ function HW2() {
                 deleteAffairCallback={deleteAffairCallback}
 
             />
-
-            <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeAffairs/>*/}
-            <hr/>
+
         </div>
     );
 }

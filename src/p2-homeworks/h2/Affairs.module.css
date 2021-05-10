@@ -2,20 +2,20 @@
     /*padding: 15px;*/
     border: 1px solid #97c6e3;
     width: 400px;
-    margin: 0 auto;
+    margin: 15px auto 20px auto;
     border-radius: 20px;
     overflow: hidden;
-}
-
-.buttonWrapper button {
-    padding: 5px 0;
-    width: 25%;
-    height: 100%;
-    border: none;
-    border-right: 1px solid #cae4e7;
-    outline: none;
-    cursor: pointer;
-    /*transition: all .3s linear;*/
+    }
+    
+    .buttonWrapper button {
+        padding: 5px 0;
+        width: 25%;
+        height: 100%;
+        border: none;
+        border-right: 1px solid #cae4e7;
+        outline: none;
+        cursor: pointer;
+        /*transition: all .3s linear;*/
 }
 .buttonWrapper button:last-child{
     border-right: none;
@@ -30,4 +30,10 @@
 }
 .buttonWrapper button:hover{
     background-color: #c0fb61;
+}
+
+@media screen and (max-width: 400px) {
+    .wrapper {
+        width: 100%;
+    }
 }

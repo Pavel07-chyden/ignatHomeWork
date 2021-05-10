@@ -1,0 +1,103 @@
+.navBar {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: silver;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(calc(-100% + 40px));
+    transition: all .3s linear;
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.button {
+    width: 26px;
+    height: 26px;
+    border: none;
+    outline: transparent;
+    background-color: grey;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.openNavbar {
+    left: 10px;
+}
+
+.button span {
+    display: block;
+    height: 2px;
+    width: 20px;
+    background-color: white;
+    position: relative;
+}
+
+.button span::after, .button span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 20px;
+    background-color: white;
+}
+
+.button span::after {
+    transform: translateY(-300%);
+}
+
+.button span::before {
+    transform: translateY(300%);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*.newStyle {*/
+/*    border: 3px solid #000;*/
+/*    margin: 0 auto;*/
+/*    padding-top: 10px;*/
+/*    height: 50px;*/
+/*    width: 350px;*/
+/*    font-weight: 700;*/
+/*    font-size: 30px;*/
+/*    text-decoration: none;*/
+/*    color: #fff;*/
+/*    text-align: center;*/
+/*    align-items: center;*/
+/*    background-color: #8b0000;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*.newBar {*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*    margin: 0 auto;*/
+/*    border: 3px solid #000;*/
+/*    height: 60px;*/
+/*    width: 350px;*/
+/*    align-items: center;*/
+/*    text-align: center;*/
+/*}*/
+
+/*@media screen and (max-width: 400px) {*/
+/*    .navBar {*/
+/*        width: 100vw;*/
+/*    }*/
+/*}*/

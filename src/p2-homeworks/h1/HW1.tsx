@@ -1,5 +1,6 @@
 import React from "react";
 import Message from "./Message";
+import s from './HW1.module.css'
 
 
 export const messageData: messageDataType = {
@@ -19,16 +20,13 @@ export type  messageDataType = {
 
 function HW1() {
     return (
-        <div>
-            <hr/>
-            homeworks 1
+        <div className={s.homeWorkBlock1}>
+            <h2 className={s.clockTitle}>homeworks 1</h2>
             {/*should work (должно работать)*/}
             <Message messageData={messageData}/>
 
-            <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeMessage/>*/}
-            <hr/>
         </div>
     );
 }

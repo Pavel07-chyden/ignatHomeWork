@@ -15,14 +15,12 @@ function HW4() {
         }
     }
 
-    const [checked, setChecked] = useState<boolean>(false);
+    const [checked, setChecked] = useState <boolean>(false);
     const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked);
 
     return (
-        <div>
-            <hr/>
-            homeworks 4
-
+        <div className={s.homeWorkBlock4} >
+            <h2 className={s.clockTitle}> homeworks 4 </h2>
             <div className={s.column}>
                 {/*should work (должно работать)*/}
                 <SuperInputText
@@ -30,7 +28,8 @@ function HW4() {
                     onChangeText={setText}
                     onEnter={showAlert}
                     error={error}
-                    // className={s.blue} // проверьте, рабоет ли смешивание классов
+                    placeholder={"Введите текст для отображения"}
+                    className={`${s.TexInput} ${s.blue}`}// проверьте, рабоет ли смешивание классов
                 />
 
                 {/*should work (должно работать)*/}
